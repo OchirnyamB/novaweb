@@ -1,0 +1,8 @@
+*.pyc
+venv/
+*~
+*.swp
+*.swo
+media/
+static/
+templates/
