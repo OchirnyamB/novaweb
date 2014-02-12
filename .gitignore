@@ -3,6 +3,6 @@ venv/
 *~
 *.swp
 *.swo
-media/
-static/
-templates/
+/media/
+/static/
+/templates/
