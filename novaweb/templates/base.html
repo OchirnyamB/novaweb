@@ -1,10 +1,19 @@
 {% load cms_tags sekizai_tags %}
+{% load staticfiles %}
 <html>
   <head>
-      {% render_block "css" %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/global.css" media="all">
+    {% render_block "css" %}
   </head>
   <body>
       {% cms_toolbar %}
+      <header>
+        {% load menu_tags %}
+        <ul>
+          {% show_menu 0 100 100 100 %}
+        </ul>
+      </header>
+      {% placeholder new_content %}
       {% placeholder base_content %}
       {% block base_content %}{% endblock %}
       {% render_block "js" %}
