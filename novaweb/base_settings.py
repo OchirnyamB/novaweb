@@ -133,6 +133,7 @@ INSTALLED_APPS = (
     'south',
     'sekizai',
     'cms.plugins.text',
+    'cms.plugins.link',
     'filer',
     'easy_thumbnails',
     'cmsplugin_filer_file',
