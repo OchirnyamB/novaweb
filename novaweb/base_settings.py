@@ -141,6 +141,7 @@ INSTALLED_APPS = (
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
+    'tinymce',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -160,6 +161,8 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters',
 )
+
+CMS_USE_TINYMCE = True
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 
