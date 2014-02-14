@@ -1,21 +1,47 @@
+<!DOCTYPE html>
 {% load cms_tags sekizai_tags %}
 {% load staticfiles %}
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOVA Web Dev</title>
+    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/global.css" media="all">
     {% render_block "css" %}
   </head>
   <body>
-      {% cms_toolbar %}
-      <header>
-        {% load menu_tags %}
-        <ul>
-          {% show_menu 0 100 100 100 %}
-        </ul>
-      </header>
-      {% placeholder new_content %}
-      {% placeholder base_content %}
-      {% block base_content %}{% endblock %}
-      {% render_block "js" %}
+    {% cms_toolbar %}
+    <div class="container">
+      <div id="logo_cont">
+         <img class="logo" src="{{ STATIC_URL }}images/Logo.svg"/>
+      </div>
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">NOVA Web Dev</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container" id="content">
+        {% block base_content %}{% endblock %}
+        {% render_block "js" %}
+      </div>
+      <footer>
+        <img class="logo" src="{{ STATIC_URL }}images/Logo.svg"/>
+        <p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
