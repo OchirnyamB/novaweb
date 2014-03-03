@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 {% load cms_tags sekizai_tags %}
 {% load staticfiles %}
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NOVA Web Dev</title>
-    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/global.css" media="all">
-    {% render_block "css" %}
-  </head>
-  <body>
-    {% cms_toolbar %}
-    <div class="container">
-      <div id="logo_cont">
-         <img class="logo" src="{{ STATIC_URL }}images/Logo.svg"/>
-      </div>
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="/">NOVA Web Dev</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/contact/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="container" id="content">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>NOVA Web Development</title>
+
+<link href="{{ STATIC_URL }}css/global.css" rel="stylesheet" type="text/css">
+<link href="{{ STATIC_URL }}css/responsiveslides.css" rel="stylesheet" type="text/css">
+{% render_block "css" %}
+</head>
+
+<body>
+{% cms_toolbar %}
+
+<div class="wrapper">
+		
+        <div class="logoblock">
+    		<img src="{{ STATIC_URL }}images/nwd_logo_clear.png">
+
+ 			<nav>
+        		<h2><a href="/">Home</a></h2>
+		  		<h2><a href="/about/">Who We Are</a></h2>
+          		<!--<h2><a href="staff.html">Staff</a></h2>-->
+		  		<h2><a href="/services/">What We Do</a></h2>
+                <h2><a href="/portfolio/">Portfolio</a></h2>
+         		<h2><a href="/contact/">Contact Us</a></h2>
+  			</nav>
+            
+		</div>
         {% block base_content %}{% endblock %}
         {% render_block "js" %}
-      </div>
-      <footer>
-        <img class="logo" src="{{ STATIC_URL }}images/Logo.svg"/>
-        <p>
-      </footer>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
-  </body>
-</html>
+</div>
+
+<footer>
+	
+    <div class="footernav">
+    
+    	<ul>
+        	<li><h2><a href="/">Home</a></h2></li>
+	  		<li><h2><a href="/about/">Who We Are</a></h2></li>
+          	<!--<li><h2><a href="staff.html">Staff</a></h2></li>-->
+		  	<li><h2><a href="/services/">What We Do</a></h2></li>
+                <li><h2><a href="/portfolio/">Portfolio</a></h2></li>
+         	<li><h2><a href="/contact/">Contact Us</a></h2></li>
+            <li><h2><a href="/">NOVA Web Development © 2014<h2></h2></a></h2></li><a href="/">
+         </a></ul><a href="/">	 
+   
+  	</a></div><a href="/">
+	
+</a></footer><a href="/">
+</a></div><a href="/">
+
+
+</a></body></html>
