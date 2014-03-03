@@ -142,6 +142,7 @@ INSTALLED_APPS = (
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
     'tinymce',
+    'cmsplugin_nivoslider',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -156,6 +157,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
+    'cmsplugin_nivoslider.thumbnail_processors.pad_image',
     'easy_thumbnails.processors.autocrop',
     #'easy_thumbnails.processors.scale_and_crop',
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',

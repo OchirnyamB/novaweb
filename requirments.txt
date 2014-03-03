@@ -5,3 +5,4 @@ cmsplugin-filer==0.9.5
 easy_thumbnails>=1.0-alpha-17
 django-polymorphic>=0.2
 django-tinymce
+cmsplugin_nivoslider
