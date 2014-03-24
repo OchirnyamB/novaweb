@@ -1,4 +1,5 @@
 from base_settings import *
+from my_email import *
 
 DATABASES = {
     'default': {

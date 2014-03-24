@@ -1,4 +1,5 @@
 from base_settings import *
+from email import *
 import site, os
 
 DEBUG = False

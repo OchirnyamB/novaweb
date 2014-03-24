@@ -239,6 +239,9 @@ a:visited {
 	margin-left:5%;	
 }
 
+body > div.wrapper > div.maincontent > form{
+	width: 10%;
+}
 
 
 /*footer .colft1, .colft2, .colft3, .colft4 p {
