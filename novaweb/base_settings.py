@@ -98,6 +98,7 @@ MIDDLEWARE_CLASSES = (
 
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
+    ('template_2.html', 'Template Two'),
     ('two_panel.html', '2 Panel Template'),
 )
 
@@ -196,3 +197,7 @@ LOGGING = {
         },
     }
 }
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

@@ -7,3 +7,4 @@ venv/
 /static/
 /templates/
 /database
+my_email.py
