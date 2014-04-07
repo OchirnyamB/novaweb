@@ -22,18 +22,18 @@ h2 {display:inline;}
 
 /*Profile CSS*/
 .profile {
-display: flex;
-margin-top: 2%;
+    display: inline-block;
+    margin-top: 2%;
 }
 
 .pro-image {
-display: inline;
-float: left;
+    display: inline;
+    float: left;
 }
 
 body > div.wrapper > div.main > div > div.bio {
-display: inline;
+    display: inline;
 }
 body > div.wrapper > div.main > div > div.bio > span > strong > span {
-        font-size: 17px;
+    font-size: 17px;
 }
