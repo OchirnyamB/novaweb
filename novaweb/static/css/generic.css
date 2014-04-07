@@ -22,7 +22,8 @@ h2 {display:inline;}
 
 /*Profile CSS*/
 .profile {
-display: inline;
+display: flex;
+margin-top: 2%;
 }
 
 .pro-image {
@@ -32,4 +33,7 @@ float: left;
 
 body > div.wrapper > div.main > div > div.bio {
 display: inline;
+}
+body > div.wrapper > div.main > div > div.bio > span > strong > span {
+        font-size: 17px;
 }
