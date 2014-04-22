@@ -28,6 +28,7 @@ h2 {display:inline;}
 
 .pro-image {
     display: inline;
+    padding-right: 10px;
     float: left;
 }
 
